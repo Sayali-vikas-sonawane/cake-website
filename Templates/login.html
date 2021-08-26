@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
-
 body {
-  background-color: #e6e6ff; 
- }
+   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
 </style>
 <style>
 .bar
@@ -15,7 +16,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color:#ccccff; 
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   z-index: 1;
 }
 </style>
@@ -28,7 +29,7 @@ body {
   float: right;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -55,89 +56,63 @@ body {
   background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
 }</style>
 <style>
-.button2 {
+.button1 {
   background-color: white;
   color: black;
   border: 2px solid #555555;
 }
-.button2:hover
+.button1:hover
 {
   transform: scale(1.1); 
 }
 </style>
-<style>
-* {
-  box-sizing: border-box;
-  
+<style> 
+input[type=text] {
+  width: 82%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  background-color:#e0e0d1;
 }
-
-input[type=text], select, textarea {
-  width: 50%;
-  padding: 12px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 15px;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #6699ff;
-  font-size:15px;
-  font-weight: bold;
-  padding: 12px 20px 12px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #0066ff;
-}
-
-.container3 {
-  border-radius: 5px;  
-  padding: 10px 12px 12px;
+.form {
+  width: 600px;
+  border: 3px solid grey;
+  padding: 10px;
   margin: 50px 75px 75px 460px;
+  background-color:white;
+  }
+</style>
+<style>
+.button2 {
+  background-color:  #008CBA;;
+  border: none;
+  color: black;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
 }
-
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+#password
+{
+background-color:#e0e0d1;
 }
 </style>
 <style>
-.button4 {
-background-color: #0096FF;
-color: white;
-padding: 10px 24px;
-border-radius: 12px;
-}
-</style> 
-<style>
 hr {
     border: none;
-    border-top: 3px double #333;
+    border-top: 3px solid #333;
     color: #333;
     overflow: visible;
     text-align: center;
@@ -155,67 +130,47 @@ hr:after {
 </head>
 <body>
 <div class="bar">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-       <a class="navbar-brand" href="#">
-    <img src="D:\web developement\logo3.png" alt="logo" style="width:100px; height:80px;"">
+  <a class="navbar-brand" href="#">
+    <img src="D:\web developement\logo3.png" alt="logo" style="width:100px; height:80px;">
   </a><br>
   
 <div class="topnav">
   <a href="login.html" title="Log In" class="relative nammenu "><h3>Log In</h3></a>
   <a href=signup.html title="Register" class="relative nammenu "><h3>Register</h3></a>
-  <a href=product.html title="PRODUCTS" class="relative nammenu "><h3>Products</h3></a>    
+  <a href=product.html title="PRODUCTS" class="relative nammenu "><h3>Products</h3></a>
   <a href="home1.html" title="About" class="relative nammenu "><h3>About</h3></a>
-  <a href="homepage1.html" title="Home" class="relative nammenu "><h3>Home</h3></a>
+  <a href="index.html" title="Home" class="relative nammenu "><h3>Home</h3></a>
 </div>
 </div>
-<br><br><br>
-<div class="container3">
-   <h2><b>SIGN UP</b></h2>
-  <div class="row">
+<br><br><br><br><br>
+<div class="form">
+<form>
+   <div class="row">
     <div class="col-25">
-      <label for="fname"><h4>First Name:</h4></label>
+       <label for="fname"><p style="font-size:25px">&nbsp&nbsp&nbsp&nbspUsername:</p></label>
     </div>
     <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="First name..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="lname"><h4>Last Name:</h4></label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Last name..">
+      <input type="text" id="username" name="username" placeholder="Username..">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="email"><h4>Email:</h4></label>
+      <label for="password"><p style="font-size:25px">&nbsp&nbsp&nbsp&nbspPassword:</p></label>
     </div>
     <div class="col-75">
-      <input type="text" id="email" name="email" placeholder="Email..">
+      &nbsp&nbsp<input type="password" id="password" name="password" placeholder="     Password..." size="52" style="height:48px">
     </div>
   </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="password"><h4>Password:</h4></label>
-    </div>
-    <div class="col-75">
-      <input type="password" id="password" name="password" placeholder="  Password..." size="52" style="height:48px">
-    </div>
-  </div>
-  <h4 align="center">Already a member?<a href="login.html"> Log In</a></h4>
-  <div class="row">
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Sign Up">
-  </div>
-  </div>
-  <hr>
-  <h3 align="center"><button class="button button4"><img src="C:\Users\DELL\Downloads\icon7.png" width="20" height="20">&nbsp<b>Continue with Facebook</b></button>&nbsp
-  <button class="button button4">&nbsp<img src="C:\Users\DELL\Downloads\icon8.png" width="20" height="20">&nbsp&nbsp<b>Sign in with Google</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button></h3>
-<br><br><br>
+    <h2 align="center"><button class="button button2"><b>LOGIN</b></button></h2>
+    <hr>
+    <br>
+    <h3 align="center"><img src="C:\Users\DELL\Downloads\icon8.png" width="25" height="25"><a href="googleaccount.com">&nbsp&nbspSign in with Google</a></h3>
+    <h4 align="center">Forget Password?</h4><br>
+    <h4 align="center">Don't have an account? <a href="signup.html"> Sign up</a></h4>
+</form>
+<img src="C:\Users\DELL\Downloads\pr9.jpg" class="center" width="200" height="200">
+</div>
+
 <div class="container2">
   <div class="row">
     <div class="col-sm-3">
@@ -255,7 +210,7 @@ hr:after {
      <div class="col-sm-4">
       <p>Sign up for updates</p>
       <input type="Username" id="Username" placeholder="Enter your email.." name="Username" maxlength="52" size="50" ><br></b>
-      <br><button class="button button2">SIGN UP</button>
+      <br><button class="button button1">SIGN UP</button>
     </div>
   </div>
 </div>

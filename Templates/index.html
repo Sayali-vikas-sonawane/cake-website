@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <title>Cake Shop</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
 body {
-  background-color: lightblue;
- }
+background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+}
+</style>
+<style>
+h1 {
+  font-family: "Sofia", sans-serif;
+  font-size: 40px;  
+  background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 </style>
 <style>
 .bar
@@ -14,8 +25,13 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: lightblue;
+  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
   z-index: 1;
+}
+</style>
+<style>
+.zoom:hover {
+  transform: scale(1.1); 
 }
 </style>
 <style>
@@ -27,7 +43,7 @@ body {
   float: right;
   color: black;
   text-align: center;
-  padding: 12px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -39,13 +55,6 @@ body {
 .topnav a.active {
   background-color: white;
   color: black;
-  
-</style>
-<style>
-.container2
-{
-  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
-}
 </style>
 <style>
 .center {
@@ -54,6 +63,11 @@ body {
   margin-right: auto;
 }
 </style>
+<style>
+.container2
+{
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}</style>
 <style>
 .button5 {
   background-color: white;
@@ -65,142 +79,73 @@ body {
   transform: scale(1.1); 
 }
 </style>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 15px;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #ff4d4d;
-  opacity: 0.9;
-  font-size:15px;
-  font-weight: bold;
-  padding: 12px 20px 12px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #e63900;
-}
-
-.container3 {
-  border-radius: 5px;
-  background-color: lightblue; 
-  padding: 10px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-</style>
 </head>
 <body>
 <div class="bar">
     <a class="navbar-brand" href="#">
     <img src="D:\web developement\logo3.png" alt="logo" style="width:100px; height:80px;">
-  </a>
+    </a>
   
 <div class="topnav">
   <a href="login.html" title="Log In" class="relative nammenu "><h3>Log In</h3></a>
   <a href=signup.html title="Register" class="relative nammenu "><h3>Register</h3></a>
   <a href=product.html title="PRODUCTS" class="relative nammenu "><h3>Products</h3></a>    
   <a href="home1.html" title="About" class="relative nammenu "><h3>About</h3></a>
-  <a href="homepage1.html" title="Home" class="relative nammenu "><h3>Home</h3></a>
+  <a href="index.html" title="Home" class="relative nammenu "><h3>Home</h3></a>
 </div>
-<h1 align="center"><p class="bg-danger text-white">Contact Details</p></h1>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <form class="navbar-form navbar-right" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
 </div>
-<br><br><br><br><br><br><br><br><br>
+</div>
+</form>
+</div>
+</nav>
+</div>
+<br><br><br><br><br><br>
+<div class="jumbotron text-center">
+ <h1 align="center"><b>Sweet Revenge Bakery</b></h1>
+ <p><b>Share the joy..Share the berries..Order today for any Occasion!</b></p>
+</div>
+<div class="zoom">
+  <div class="row">
+    <div class="col-xl-3">
+       <img src="C:\Users\DELL\Downloads\blue.jpg" class="img-thumbnail" width="304" height="246"> 
+    </div>
+    <div class="col-xl-3">
+     <img src="C:\Users\DELL\Downloads\blue2.jpg" class="img-thumbnail" width="304" height="246">
+    </div>
+    <div class="col-xl-3">
+      <img src="C:\Users\DELL\Downloads\blue3.jpg" class="img-thumbnail" width="304" height="246">      
+    </div>
+    <div class="col-xl-3">
+      <img src="C:\Users\DELL\Downloads\blue4.jpg" class="img-thumbnail" width="304" height="246">      
+    </div>
+  </div>
+</div>
+<br><br><br>
 <div class="container">
-<div class="row">
-<div class="col-sm-6">
-<div class="container">
-<img src="D:\web developement\bg2.jpg" class="rounded-circle" alt="image" width="304" height="300">
-<p><h1>Sweet Revenge Bakery</h1></p>
-<p><h3>Address:</h3><h4>103, Periyar Nagar, Sweet Revenge Bakery, Pune - 01.</h4></p>
-<div class="container">
-<p><h3><span class="glyphicon glyphicon-earphone"> 919843775477</span></h3></p><p><h3>
-<span class="glyphicon glyphicon-earphone">
- 919790401259</span></h3></p><p><h3><span class="glyphicon glyphicon-phone-alt">
- 04244030204</span></h3></p>
-</div>
-</div>
-</div>
-<div class="col-sm-6">
-<div class="container3">
-   <h2><b><p class="text-danger">Enquiry form</p></b></h2>
   <div class="row">
-    <div class="col-25">
-      <label for="fname"><h4>Name:</h4></label>
+    <div class="col-sm-4">
+       <img src="D:\web developement\cake1.png" class="rounded" width="304" height="236"> 
+     <h4><p class="text-success"><b>Select your cake flavor and design....</b></p></h4>
     </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="col-sm-4">
+     <img src="D:\web developement\cake2.png" class="rounded" width="304" height="236">
+     <h4><p class="text-danger"><b>Write your personal message and choose the delivery date....</b></p></h4>
+    </div>
+    <div class="col-sm-4">
+      <img src="D:\web developement\cake3.png" class="rounded" width="304" height="236">      
+        <h4><p class="text-info"><b>We will deliver your cake and take care of the rest....</b></p></h4>
     </div>
   </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="email"><h4>Email:</h4></label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="email" name="email" placeholder="Your Email..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="phone"><h4>Phone:</h4></label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="phone" name="phone" placeholder="Your mobile no...">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="message"><h4> Message:</h4></label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Your Message.." style="height:150px"></textarea>
-    </div>
-  </div>
-  <div class="row">
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Send">
-  </div>
-</div>
-</div>
-</div>
 </div>
 <br><br><br>
 <div class="container2">
@@ -215,14 +160,15 @@ input[type=submit]:hover {
     </div>
     <div class="col-sm-3">
       <img src="C:\Users\DELL\Downloads\icon3.png" class="center" width="50" height="50"><br>  
-      <center><p><b>DEDICATED HELP CENTER</b><br>Call us +919790401259 | 8:00AM-10:30PM</p></center>
+      <center><p><b>DEDICATED HELP CENTER</b><br>Call us +91 919790401259 | 8:00AM-10:30PM</p></center>
     </div>
     <div class="col-sm-3">
       <img src="C:\Users\DELL\Downloads\icon4.png" class="center" width="50" height="50"><br>
       <center><p><b>SHOP ON THE GO</b><br>Download mobile app</p></center>   
     </div>
   </div>
-  <br><br><br>
+
+<br><br><br>
   <div class="row">
     <div class="col-sm-2">
        <img src="D:\web developement\logo3.png" class="center" alt="logo" style="width:100px; height:80px;">
@@ -247,4 +193,3 @@ input[type=submit]:hover {
 </div>
 </body>
 </html>
-

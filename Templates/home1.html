@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <style>
 body {
-   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-}
+  background-color: lightblue;
+ }
 </style>
 <style>
 .bar
@@ -16,7 +14,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-color: lightblue;
+  z-index: 1;
 }
 </style>
 <style>
@@ -28,7 +27,7 @@ body {
   float: right;
   color: black;
   text-align: center;
-  padding: 20px 16px;
+  padding: 12px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -40,8 +39,14 @@ body {
 .topnav a.active {
   background-color: white;
   color: black;
+  
 </style>
-
+<style>
+.container2
+{
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+</style>
 <style>
 .center {
   display: block;
@@ -50,126 +55,154 @@ body {
 }
 </style>
 <style>
-.container2
-{
-  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
-}</style>
-<style>
-.button1 {
+.button5 {
   background-color: white;
   color: black;
   border: 2px solid #555555;
 }
-.button1:hover
+.button5:hover
 {
   transform: scale(1.1); 
 }
 </style>
-<style> 
-input[type=text] {
-  width: 82%;
-  padding: 12px 20px;
-  margin: 8px 8px;
-  background-color:#e0e0d1;
-}
-.form {
-  width: 600px;
-  border: 3px solid grey;
-  padding: 10px;
-  margin: 50px 75px 75px 460px;
-  background-color:white;
-  }
-</style>
 <style>
-.button2 {
-  background-color:  #008CBA;;
-  border: none;
-  color: black;
-  padding: 20px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 6px 2px;
-  cursor: pointer;
+* {
+  box-sizing: border-box;
 }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 15px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #ff4d4d;
+  opacity: 0.9;
+  font-size:15px;
+  font-weight: bold;
+  padding: 12px 20px 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #e63900;
+}
+
+.container3 {
+  border-radius: 5px;
+  background-color: lightblue; 
+  padding: 10px;
+}
+
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
+
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
-#password
-{
-background-color:#e0e0d1;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-</style>
-<style>
-hr {
-    border: none;
-    border-top: 3px solid #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
-
-hr:after {
-    background: #fff;
-    content: 'OR';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 </style>
 </head>
 <body>
 <div class="bar">
-  <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#">
     <img src="D:\web developement\logo3.png" alt="logo" style="width:100px; height:80px;">
-  </a><br>
+  </a>
   
 <div class="topnav">
   <a href="login.html" title="Log In" class="relative nammenu "><h3>Log In</h3></a>
   <a href=signup.html title="Register" class="relative nammenu "><h3>Register</h3></a>
-  <a href=product.html title="PRODUCTS" class="relative nammenu "><h3>Products</h3></a>
+  <a href=product.html title="PRODUCTS" class="relative nammenu "><h3>Products</h3></a>    
   <a href="home1.html" title="About" class="relative nammenu "><h3>About</h3></a>
-  <a href="homepage1.html" title="Home" class="relative nammenu "><h3>Home</h3></a>
+  <a href="index.html" title="Home" class="relative nammenu "><h3>Home</h3></a>
+</div>
+<h1 align="center"><p class="bg-danger text-white">Contact Details</p></h1>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<div class="container">
+<img src="D:\web developement\bg2.jpg" class="rounded-circle" alt="image" width="304" height="300">
+<p><h1>Sweet Revenge Bakery</h1></p>
+<p><h3>Address:</h3><h4>103, Periyar Nagar, Sweet Revenge Bakery, Pune - 01.</h4></p>
+<div class="container">
+<p><h3><span class="glyphicon glyphicon-earphone"> 919843775477</span></h3></p><p><h3>
+<span class="glyphicon glyphicon-earphone">
+ 919790401259</span></h3></p><p><h3><span class="glyphicon glyphicon-phone-alt">
+ 04244030204</span></h3></p>
 </div>
 </div>
-<br><br><br><br><br>
-<div class="form">
-<form>
-   <div class="row">
+</div>
+<div class="col-sm-6">
+<div class="container3">
+   <h2><b><p class="text-danger">Enquiry form</p></b></h2>
+  <div class="row">
     <div class="col-25">
-       <label for="fname"><p style="font-size:25px">&nbsp&nbsp&nbsp&nbspUsername:</p></label>
+      <label for="fname"><h4>Name:</h4></label>
     </div>
     <div class="col-75">
-      <input type="text" id="username" name="username" placeholder="Username..">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="password"><p style="font-size:25px">&nbsp&nbsp&nbsp&nbspPassword:</p></label>
+      <label for="email"><h4>Email:</h4></label>
     </div>
     <div class="col-75">
-      &nbsp&nbsp<input type="password" id="password" name="password" placeholder="     Password..." size="52" style="height:48px">
+      <input type="text" id="email" name="email" placeholder="Your Email..">
     </div>
   </div>
-    <h2 align="center"><button class="button button2"><b>LOGIN</b></button></h2>
-    <hr>
-    <br>
-    <h3 align="center"><img src="C:\Users\DELL\Downloads\icon8.png" width="25" height="25"><a href="googleaccount.com">&nbsp&nbspSign in with Google</a></h3>
-    <h4 align="center">Forget Password?</h4><br>
-    <h4 align="center">Don't have an account? <a href="signup.html"> Sign up</a></h4>
-</form>
-<img src="C:\Users\DELL\Downloads\pr9.jpg" class="center" width="200" height="200">
+  <div class="row">
+    <div class="col-25">
+      <label for="phone"><h4>Phone:</h4></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="phone" name="phone" placeholder="Your mobile no...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="message"><h4> Message:</h4></label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Your Message.." style="height:150px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Send">
+  </div>
 </div>
-
+</div>
+</div>
+</div>
+<br><br><br>
 <div class="container2">
   <div class="row">
     <div class="col-sm-3">
@@ -182,15 +215,14 @@ hr:after {
     </div>
     <div class="col-sm-3">
       <img src="C:\Users\DELL\Downloads\icon3.png" class="center" width="50" height="50"><br>  
-      <center><p><b>DEDICATED HELP CENTER</b><br>Call us +91 919790401259 | 8:00AM-10:30PM</p></center>
+      <center><p><b>DEDICATED HELP CENTER</b><br>Call us +919790401259 | 8:00AM-10:30PM</p></center>
     </div>
     <div class="col-sm-3">
       <img src="C:\Users\DELL\Downloads\icon4.png" class="center" width="50" height="50"><br>
       <center><p><b>SHOP ON THE GO</b><br>Download mobile app</p></center>   
     </div>
   </div>
-
-<br><br><br>
+  <br><br><br>
   <div class="row">
     <div class="col-sm-2">
        <img src="D:\web developement\logo3.png" class="center" alt="logo" style="width:100px; height:80px;">
@@ -209,9 +241,10 @@ hr:after {
      <div class="col-sm-4">
       <p>Sign up for updates</p>
       <input type="Username" id="Username" placeholder="Enter your email.." name="Username" maxlength="52" size="50" ><br></b>
-      <br><button class="button button1">SIGN UP</button>
+      <br><button class="button button5">SIGN UP</button>
     </div>
   </div>
 </div>
 </body>
 </html>
+

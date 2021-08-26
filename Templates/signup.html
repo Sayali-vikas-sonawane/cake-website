@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+
+body {
+  background-color: #e6e6ff; 
+ }
+</style>
+<style>
+.bar
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:#ccccff; 
+  z-index: 1;
+}
+</style>
+<style>
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: pink;
+  color: black;
+}
+.topnav a.active {
+  background-color: white;
+  color: black;
+</style>
+
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<style>
+.container2
+{
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}</style>
+<style>
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+.button2:hover
+{
+  transform: scale(1.1); 
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 15px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #6699ff;
+  font-size:15px;
+  font-weight: bold;
+  padding: 12px 20px 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #0066ff;
+}
+
+.container3 {
+  border-radius: 5px;  
+  padding: 10px 12px 12px;
+  margin: 50px 75px 75px 460px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<style>
+.button4 {
+background-color: #0096FF;
+color: white;
+padding: 10px 24px;
+border-radius: 12px;
+}
+</style> 
+<style>
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: 'OR';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="navbar-brand" href="#">
+    <img src="D:\web developement\logo3.png" alt="logo" style="width:100px; height:80px;"">
+  </a><br>
+  
+<div class="topnav">
+  <a href="login.html" title="Log In" class="relative nammenu "><h3>Log In</h3></a>
+  <a href=signup.html title="Register" class="relative nammenu "><h3>Register</h3></a>
+  <a href=product.html title="PRODUCTS" class="relative nammenu "><h3>Products</h3></a>    
+  <a href="home1.html" title="About" class="relative nammenu "><h3>About</h3></a>
+  <a href="index.html" title="Home" class="relative nammenu "><h3>Home</h3></a>
+</div>
+</div>
+<br><br><br>
+<div class="container3">
+   <h2><b>SIGN UP</b></h2>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname"><h4>First Name:</h4></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="First name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname"><h4>Last Name:</h4></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email"><h4>Email:</h4></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Email..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="password"><h4>Password:</h4></label>
+    </div>
+    <div class="col-75">
+      <input type="password" id="password" name="password" placeholder="  Password..." size="52" style="height:48px">
+    </div>
+  </div>
+  <h4 align="center">Already a member?<a href="login.html"> Log In</a></h4>
+  <div class="row">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Sign Up">
+  </div>
+  </div>
+  <hr>
+  <h3 align="center"><button class="button button4"><img src="C:\Users\DELL\Downloads\icon7.png" width="20" height="20">&nbsp<b>Continue with Facebook</b></button>&nbsp
+  <button class="button button4">&nbsp<img src="C:\Users\DELL\Downloads\icon8.png" width="20" height="20">&nbsp&nbsp<b>Sign in with Google</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button></h3>
+<br><br><br>
+<div class="container2">
+  <div class="row">
+    <div class="col-sm-3">
+       <img src="C:\Users\DELL\Downloads\icon1.png" class="center" width="52" height="52"><br>
+       <center><p><b>WORLDWIDE DELIVERY</b><br>We deliver gifts to over 70 countries</p></center>
+    </div>
+    <div class="col-sm-3">
+      <img src="C:\Users\DELL\Downloads\icon2.png" class="center" width="50" height="50"><br>
+      <center><p><b>100% SAFE & SECURE PAYMENTS</b><br>Pay using secure payment methods</p></center>
+    </div>
+    <div class="col-sm-3">
+      <img src="C:\Users\DELL\Downloads\icon3.png" class="center" width="50" height="50"><br>  
+      <center><p><b>DEDICATED HELP CENTER</b><br>Call us +91 919790401259 | 8:00AM-10:30PM</p></center>
+    </div>
+    <div class="col-sm-3">
+      <img src="C:\Users\DELL\Downloads\icon4.png" class="center" width="50" height="50"><br>
+      <center><p><b>SHOP ON THE GO</b><br>Download mobile app</p></center>   
+    </div>
+  </div>
+
+<br><br><br>
+  <div class="row">
+    <div class="col-sm-2">
+       <img src="D:\web developement\logo3.png" class="center" alt="logo" style="width:100px; height:80px;">
+    </div>
+    <div class="col-sm-2">
+    <p>OUR STORY<br><br>OUR PRODUCTS<br><br>FOUNDER'S STORY<br><br>CUSTOM ORDERS</p>
+    </div>
+    <div class="col-sm-2">
+      <p>FAQs<br><br>CAREERS<br><br>PRIVACY POLICY<br><br>DISCLAIMER</p>
+    </div>
+    <div class="col-sm-2">
+      <p><h4><span class="glyphicon glyphicon-earphone"> 919843775477</span></h4></p>
+      <p><h4><span class="glyphicon glyphicon-envelope"> sweetrevenge@gmail.in</span></h4></p>
+      <img src="C:\Users\DELL\Downloads\icon6.png" width="40" height="40">&nbsp&nbsp&nbsp&nbsp&nbsp<img src="C:\Users\DELL\Downloads\icon5.png" width="40" height="40">&nbsp&nbsp&nbsp&nbsp&nbsp<img src="C:\Users\DELL\Downloads\icon7.png" width="40" height="40">
+    </div>
+     <div class="col-sm-4">
+      <p>Sign up for updates</p>
+      <input type="Username" id="Username" placeholder="Enter your email.." name="Username" maxlength="52" size="50" ><br></b>
+      <br><button class="button button2">SIGN UP</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
